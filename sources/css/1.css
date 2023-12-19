@@ -1,0 +1,531 @@
+/*  COMEÇO  */
+
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+
+        line-height: 1.5;
+
+        box-sizing: border-box;
+        color: rgb(65, 65, 65);
+        scroll-behavior: smooth;
+    }
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    h1{
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.2;
+        font-size: 60px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 50px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 22px;
+    }
+
+
+    a{
+        text-decoration: none;
+        margin: 8px;
+    }
+
+
+
+    .container{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+/*  HEADER  */
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 69px;
+        width: 100%;
+
+        z-index: 1;
+
+        position: fixed;
+        top:0;
+        background-color: white;
+        padding: 24px;
+    }
+
+
+    nav{
+        text-align: right;
+        margin:48px;
+        display: inline-flex;
+    }
+    nav img {
+        display: none;
+    }
+
+    .a{
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        transition: scale 0.5;
+    }
+    .a span{
+        font-weight: 100;
+        color: grey;
+    }
+    .a:hover{
+        scale: 1.1;
+    }
+
+
+    header p{
+        color: rgb(65, 65, 65);
+        transition: all 0.5s;
+    }
+    header p:hover{
+        color: rgb(0, 0, 0);
+        font-size:18px;
+    }
+
+/*  BANNER  */
+
+
+    #banner{
+        background-color: rgb(206, 204, 204);
+        
+        display: flex;
+
+        padding-left: 24px;
+        padding-top: 100px;
+        padding-bottom: 32px;
+
+        align-items: center;
+    }
+
+
+    .topo{
+        align-content: center;
+        margin: 48px;
+    }
+
+    .comece{
+        width: 100%;
+        transition: all 0.5s;
+
+        text-align: center;
+        margin-top: 55px;
+        padding: 8px;
+        color: white;
+        font-size: 32px;    
+        font-family: Arial, Helvetica, sans-serif;
+
+        background-color: rgb(65, 65, 65);  
+    }
+    .comece:hover{
+        scale: 102%;
+    }
+    .topo h2{
+        margin-top: 24px;
+        font-size: 28px;
+    }
+
+
+    #banner img {
+        width:57.5%;
+    }
+
+/*  ARTIGO  */
+
+
+    .artigo{
+        display: flex;
+        width: 100%;
+
+        margin-top: 32px;
+        padding-left: 24px;
+    }
+
+
+    .esquerda{
+        width: 60%;
+        margin-right: 10px;
+    }
+    .esquerda img{
+        width: 98.5%;
+        margin-bottom: 32px;
+    }
+    .esquerda p{
+        margin-top: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+    .esquerda a{
+        transition: all 0.5s;
+    }
+    .esquerda a:hover{
+        font-size: 18px;
+    }
+
+
+    .direita{
+        width: 40%;
+    }
+
+    .ok{
+        border-left: 3px solid grey;
+        display: flex;
+        padding: 16px 0;
+
+        background-color: white;
+        transition: background-color 0.5s;
+    }
+    .ok:hover{
+        background-color: rgb(206, 204, 204);
+    }
+    .ok img{
+        width: 35%;
+        justify-content: flex-end;
+        padding-left: 16px;
+        height: 35%;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .oi{
+        margin: 32px 0;
+    }
+    .oi p{
+        margin: 8px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+/*  CENTRO  */
+
+
+    .centro{
+    background-color: rgb(228, 228, 228);
+
+    align-items: center;
+    padding: 0 72px;
+    width: 100%;
+
+
+    }
+    .centro h1{
+        padding: 32px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+    .hub{
+
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-bottom: 32px;
+    }
+
+
+    .blocos{
+        margin: 16px;
+        width: 31%;
+        background-color: white;
+
+        transition: all 0.5s;
+    }
+    .blocos:hover{
+        scale: 1.05;
+    }
+    .blocos img{
+        width: 100%;
+    }
+
+
+    .sub{
+        margin: 16px;
+    }
+    .sub h3{
+        margin: 16px 0 ;
+        font-size: 32px;
+    }
+    .sub p ,.sub span{
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        margin: 8px 0 ;
+        font-size: 22px;
+        font-weight: 8px;
+    }
+
+
+/*  LIMITE  */
+
+
+    .titulo{
+        text-align: center;
+        margin: 32px;
+    }
+
+    .fim{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .video{
+        width: 60%;
+    }
+    .video video{
+        width: 95%;
+        margin: 0 3%;
+    }
+
+
+    .fim2{
+        display: block;
+        width: 40%;
+        border-left: 3px solid grey;
+        height: 40%;
+    }
+
+
+    .fim3{
+        padding: 16px;
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        transition: all 0.5s;
+    }
+    .fim3:hover{
+        background-color: rgb(206, 204, 204);
+    }
+    .fim3 img{
+        width: 35%;
+        height: 35%;
+    }
+
+
+    .fim4{
+        margin: 1%;
+    }
+    .fim4 p{
+        margin-top: 1%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+    }
+
+    .pe{
+        width: 55%;
+
+        margin: 24px;
+
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+    }
+    .pe h3{
+        margin-bottom: 24px;
+    }
+
+
+/*  FOOTER  */
+
+footer{
+    margin: 24px;
+    border-top: 3px dotted grey;
+
+    width: 95%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  MEDIAS  */
+
+@media only screen and (max-width: 880px){
+
+    /*  HEADER  */
+    
+        
+        header p, header span, header h4{
+            display: none;
+        }
+        header{
+            justify-content: center;
+
+            width: 100%;
+        }
+        header nav{
+            justify-content: space-around;  
+        }
+        header nav img{
+            justify-content: space-around; 
+            width: 32px;
+            display: inline-block;
+        }
+
+
+    /*  BANNER  */
+    
+       
+        #banner{
+            display: block;
+            width: 100%;
+            padding: 0;
+            padding-top:64px;
+        }
+        #banner img{
+            width: 100%;
+        }
+        
+
+        .comece{
+            margin: 0;
+        }
+
+
+        .topo h1{
+            margin: -16;
+            font-size: 42px;
+        }
+        .topo h2{
+            font-size: 22px;
+        }
+    
+    /*  ARTIGO  */
+    
+        
+        .artigo{    
+            width: 100%;
+
+            padding: 0;
+            margin: -48px 0px;
+        }
+        
+        
+        .esquerda{
+            display: none;
+            width: 60%;
+        }
+
+
+        .direita{
+            width: 100%;
+        }
+
+        .mobile{
+            display: block;
+            width: 100%;
+        }
+
+        .ok{
+            border-left: none;
+            display: block;
+            padding: 16px;
+        }
+
+        .PC{
+            display: none;
+        }
+
+        .oi{
+            width: 100%;
+        }
+        .oi p{
+            margin: 8px;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ok img{
+            width: 100%;
+        }
+    
+    /*  CENTRO  */
+    
+    
+        .centro{
+        background-color: white;
+        margin-top: 55px;
+        align-items: normal;
+        padding: 0 72px;
+        
+        border-top: 3px dotted grey;
+        }
+    
+        .hub{
+            height: auto;
+            display: block;
+    
+            padding-bottom: 32px;
+        }
+    
+        .blocos img{
+            display: none;
+        }
+    
+
+        .sub h3{
+            padding: 16px;
+            margin: -16px;
+            font-size: 28px;
+            background-color: rgb(206, 204, 204);
+        }
+        .sub p ,.sub span{
+            display: none;
+        }
+        .sub{
+            transition: all 0.5s;
+        }
+        .sub:hover{
+            scale: 1.1;
+        }
+    
+    /*  LIMITE  */
+    
+ 
+     .fim{
+            width: 105%;
+            margin:-24px;
+        }
+        .video{
+            width: 100%;
+        }
+        .fim2{
+            display: none;
+        }
+        .pe{
+            display: none;
+        }
+    
+    /*  FOOTER  */
+    footer{
+        margin-left: 16px;
+    }
+}
